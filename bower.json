@@ -1,0 +1,17 @@
+{
+  "name": "team-manager",
+  "description": "web app to help manage players on a (soccer) team",
+  "main": "",
+  "authors": [
+    "Brian Rush"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
