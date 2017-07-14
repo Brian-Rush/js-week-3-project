@@ -2,7 +2,9 @@
   id number: {{playerId}}
 </p>
 <div>
-  <ul>
-    <li>{{playerToDisplay.firstName}}</li>
-  </ul>
+  <img src="{{playerToDisplay.image}}" alt="Profile picture of {{playerToDisplay.firstName}} {{playerToDisplay.lastName}}" />
+  <h3>{{playerToDisplay.firstName}} {{playerToDisplay.lastName}}</h3>
+  <p>
+    {{playerToDisplay.notes}}
+  </p>
 </div>
