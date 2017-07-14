@@ -1,3 +1,9 @@
 <p>
-  roster works!
+  roster works! testing
 </p>
+<div *ngFor="let player of players" (click)="goToDetailPage(player)">
+  <!-- <img src="{{player.image}}" alt="profile picture of {{player.firstName}} {{player.lastName}}" /> -->
+  <ul>
+    <li>{{player.firstName}} {{player.lastName}}</li>
+  </ul>
+</div>
