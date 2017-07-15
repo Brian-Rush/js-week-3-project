@@ -21,8 +21,8 @@ export class RosterComponent implements OnInit {
     this.players = this.playerService.getPlayers();
   }
 
-  goToDetailPage(clickedPlayer: Player) {
-    // this.router.navigate(['players', clickedPlayer.id]);
+  goToDetailPage(clickedPlayer) {
+    this.router.navigate(['players', clickedPlayer.$key]);
   }
 
 }

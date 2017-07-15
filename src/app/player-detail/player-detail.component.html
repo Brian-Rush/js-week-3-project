@@ -1,10 +1,7 @@
-<p>
-  id number: {{playerId}}
-</p>
 <div>
-  <img src="{{playerToDisplay.image}}" alt="Profile picture of {{playerToDisplay.firstName}} {{playerToDisplay.lastName}}" />
-  <h3>{{playerToDisplay.firstName}} {{playerToDisplay.lastName}}</h3>
+  <img src="{{(playerToDisplay | async)?.image}}" alt="Profile picture of {{(playerToDisplay | async)?.firstName}} {{(playerToDisplay | async)?.lastName}}" />
+  <h3>{{(playerToDisplay | async)?.firstName}} {{(playerToDisplay | async)?.lastName}}</h3>
   <p>
-    {{playerToDisplay.notes}}
+    {{(playerToDisplay | async)?.notes}}
   </p>
 </div>

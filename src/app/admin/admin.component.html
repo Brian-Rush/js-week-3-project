@@ -1,5 +1,5 @@
 <h3>Add New Player to Team</h3>
-<form>
+<div>
   <div>
     <label>First Name:</label>
     <br>
@@ -24,4 +24,4 @@
     <textarea #newNotes></textarea>
   </div>
   <button (click)="submitForm(newFirstName.value, newLastName.value, newImage.value, newNotes.value); newFirstName.value=''; newLastName.value=''; newImage.value=''; newNotes.value=''">Add</button>
-</form>
+</div>
