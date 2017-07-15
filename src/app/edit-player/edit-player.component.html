@@ -1,3 +1,18 @@
-<p>
-  edit-player works!
-</p>
+<h4>Edit Player</h4>
+
+<label>Image URL:</label>
+<input [(ngModel)]="selectedPlayer.image">
+<br>
+
+<label>First Name:</label>
+<input [(ngModel)]="selectedPlayer.firstName">
+<br>
+
+<label>Last Name:</label>
+<input [(ngModel)]="selectedPlayer.lastName">
+<br>
+
+<label>Notes:</label>
+<input [(ngModel)]="selectedPlayer.notes" id="textarea-input">
+
+<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>

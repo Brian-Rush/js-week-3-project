@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { PlayerService } from '../player.service';
+
 
 @Component({
   selector: 'app-edit-player',
   templateUrl: './edit-player.component.html',
-  styleUrls: ['./edit-player.component.scss']
+  styleUrls: ['./edit-player.component.scss'],
+  providers: [PlayerService]
 })
-export class EditPlayerComponent implements OnInit {
 
-  constructor() { }
+export class EditPlayerComponent implements OnInit {
+  @Input() selectedPlayer;
+
+  constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
+  }
+
+  beginUpdatingPlayer(playerToUpdate){
+    this.playerService.updatePlayer(playerToUpdate);
   }
 
 }
