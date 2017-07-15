@@ -3,7 +3,6 @@ export class Player {
                 public firstName: string,
                 public lastName: string,
                 public image: string,
-                public notes: string,
-                public id: number
+                public notes: string
               ) {}
 }
